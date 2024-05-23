@@ -127,7 +127,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ADTsortedMultiMap.cpp" />
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="ExtendedTest.cpp" />
+    <ClCompile Include="ShortTest.cpp" />
+    <ClCompile Include="SMMIterator.cpp" />
+    <ClCompile Include="SortedMultiMap.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ExtendedTest.h" />
+    <ClInclude Include="ShortTest.h" />
+    <ClInclude Include="SMMIterator.h" />
+    <ClInclude Include="SortedMultiMap.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
