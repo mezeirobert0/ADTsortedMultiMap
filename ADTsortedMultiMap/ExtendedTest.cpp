@@ -249,10 +249,29 @@ void testIterator() {
 	testIterator(desc);
 }
 
+void testKeySet() {
+	cout << "Test keySet()" << endl;
+	SortedMultiMap smm(asc);
+	auto keySet = smm.keySet();
+	assert(keySet.size() == 0);
+
+	smm.add(0, 1);
+	smm.add(0, 2);
+	smm.add(0, 3);
+	smm.add(10, 7);
+	smm.add(10, 8);
+	smm.add(10, 9);	
+	smm.add(7, 8);
+	smm.add(7, 9);
+
+	assert(smm.keySet().size() == 3);
+}
+
 void testAllExtended() {
 	testCreate();
 	testSearch();
 	testRemove();
 	testIterator();
 	testRelations();
+	testKeySet();
 }

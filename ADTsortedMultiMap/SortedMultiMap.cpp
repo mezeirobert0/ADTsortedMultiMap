@@ -270,6 +270,15 @@ void SortedMultiMap::addNode(int start, const Node& node) {
 	return;
 }
 
+vector<TKey> SortedMultiMap::keySet() const {
+	vector<TKey> keys;
+
+	for(int i = 0; i < n; i++)
+		keys.push_back(e[i].key);
+
+	return keys;
+}
+
 void SortedMultiMap::getInorderIndexes(int start, vector<int>& indexes) const {
 	if (left[start] != -1)
 		getInorderIndexes(left[start], indexes);
