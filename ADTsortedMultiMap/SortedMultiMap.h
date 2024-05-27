@@ -1,4 +1,5 @@
 #pragma once
+#include "Vector.h"
 
 #include <vector>
 #include <utility>
@@ -61,7 +62,7 @@ public:
     vector<TKey> keySet() const;
 
 	// recursive method to eppend to a vector the indexes of the nodes in the inorder traversal
-    void getInorderIndexes(int, vector<int>&) const;
+    void getInorderIndexes(int, Vector&) const;
 
     // void printTree();
 

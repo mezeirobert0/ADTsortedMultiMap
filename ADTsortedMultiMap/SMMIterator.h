@@ -2,6 +2,7 @@
 
 #include "SortedMultiMap.h"
 #include <vector>
+#include "Vector.h"
 
 
 class SMMIterator{
@@ -10,7 +11,7 @@ class SMMIterator{
 private:
 	int currentNodeIndex;
 	int currentValueIndex;
-	vector<int> indices;
+	Vector indices;
 
 	const SortedMultiMap& map;
 	SMMIterator(const SortedMultiMap& map);

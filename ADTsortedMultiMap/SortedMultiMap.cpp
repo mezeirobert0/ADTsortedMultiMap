@@ -279,11 +279,11 @@ vector<TKey> SortedMultiMap::keySet() const {
 	return keys;
 }
 
-void SortedMultiMap::getInorderIndexes(int start, vector<int>& indexes) const {
+void SortedMultiMap::getInorderIndexes(int start, Vector& indexes) const {
 	if (left[start] != -1)
 		getInorderIndexes(left[start], indexes);
 
-	indexes.push_back(start);
+	indexes.add(start);
 
 	if (right[start] != -1)
 		getInorderIndexes(right[start], indexes);
